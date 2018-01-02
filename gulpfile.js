@@ -4,7 +4,8 @@ const sass        = require('gulp-sass');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
-    return gulp.src(['src/scss/*.scss'])
+    return gulp.src(['src/scss/*.scss', './src/sass/main.scss'])
+        .pipe(sass().on('error', sass.logError))
         .pipe(sass())
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
