@@ -9,74 +9,143 @@
 </head>
 
 <body>
-  <section class="hero is-success is-fullheight">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-      <header class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+  <!-- Header -->
+  <header class="app-header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
+              Home
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-              <span></span>
-              <span></span>
-              <span></span>
+            <a class="navbar-item">
+              Examples
+            </a>
+            <a class="navbar-item">
+              Documentation
+            </a>
+            <span class="navbar-item">
+              <a class="button is-success is-inverted">
+                <span class="icon">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Download</span>
+              </a>
             </span>
           </div>
-          <div id="navbarMenuHeroC" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item is-active">
-                Home
-              </a>
-              <a class="navbar-item">
-                Examples
-              </a>
-              <a class="navbar-item">
-                Documentation
-              </a>
-              <span class="navbar-item">
-                <a class="button is-success is-inverted">
-                  <span class="icon">
-                    <i class="fa fa-github"></i>
-                  </span>
-                  <span>Download</span>
-                </a>
-              </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="app-content">
+    <section class="hero is-primary is-fullheight">
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column has-text-left">
+              <h1 class="title">
+                Title
+              </h1>
+              <h2 class="subtitle">
+                Subtitle
+                
+              </h2>
+            </div>
+            <div class="column">
+
             </div>
           </div>
         </div>
-      </header>
-    </div>
-  
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title">
-          Title
-        </h1>
-        <h2 class="subtitle">
-          Subtitle
-        </h2>
+      </div>
+    </section>
+
+    <!-- Acara -->
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered has-text-centered">
+            <div class="column">
+              <h1 class="title">Rangkaian Acara</h1>
+              <a class="button is-rounded">Rounded</a>
+              <a class="button is-primary is-rounded">Rounded</a>
+              <a class="button is-link is-rounded">Rounded</a>
+              <a class="button is-info is-rounded">Rounded</a>
+              <a class="button is-success is-rounded">Rounded</a>
+              <a class="button is-danger is-rounded">Rounded</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="hero is-primary is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered has-text-centered">
+            <div class="column">
+              <h1 class="title">Timeline</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photos -->
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered has-text-centered">
+            <div class="column">
+              <h1 class="title">Photos</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsor & Media Partner -->
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column has-text-left">
+              <h1 class="title">Sponsor</h1>
+            </div>
+            <div class="column has-text-right">
+              <h1 class="title">Media Partner</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by
+          <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
       </div>
     </div>
-  
-    <!-- Hero footer: will stick at the bottom -->
-    <div class="hero-foot">
-      <nav class="tabs is-boxed is-fullwidth">
-        <div class="container">
-          <ul>
-            <li class="is-active"><a>Overview</a></li>
-            <li><a>Modifiers</a></li>
-            <li><a>Grid</a></li>
-            <li><a>Elements</a></li>
-            <li><a>Components</a></li>
-            <li><a>Layout</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </section>
+  </footer>
+
 </body>
 
 
