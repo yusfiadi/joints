@@ -1,50 +1,46 @@
-// 1. Import the initial variables
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+// Import the initial variables
 @import "node_modules/bulma/sass/utilities/initial-variables";
 @import "node_modules/bulma/sass/utilities/functions";
-
-// 2. Set your own initial variables
-// Update blue
-$blue: #72d0eb;
-// Add pink and its invert
-$pink: #ffb3b3;
-$pink-invert: #fff;
+// INITIAL VARIABLES
+$white: #fff;
+$white-invert: #fff;
+$red: #db3f89;
+$blue: #5399e3;
+$green: #3abb69;
 // Add a serif family
-$family-serif: 'Open Sans', sans-serif;
-
+$family-serif: 'Open Sans',
+sans-serif;
 $radius-rounded: 290486px !default;
-
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-// Use the existing orange as the danger color
-$danger: $orange;
+// DERIVED VARIABLES
 // Use the new serif family
 $family-primary: $family-serif;
-
-// 4. Setup your Custom Colors
+// CUSTOM COLOR
+$pink: #f06562;
+$pink-invert: findColorInvert($pink);
+$purple: #684aa0;
+$purple-invert: findColorInvert($purple);
 $linkedin: #0077b5;
 $linkedin-invert: findColorInvert($linkedin);
 $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
 $github: #333;
 $github-invert: findColorInvert($github);
-
-// 5. Add new color variables to the color map.
+//Add new color variables to the color map.
 @import "node_modules/bulma/sass/utilities/derived-variables.sass";
-$addColors: (
-  "twitter":($twitter, $twitter-invert),
-  "linkedin": ($linkedin, $linkedin-invert),
-  "github": ($github, $github-invert)
-);
-$colors: map-merge($colors, $addColors);
-
+$addColors: ( "twitter":($twitter, $twitter-invert),
+"linkedin": ($linkedin, $linkedin-invert),
+"github": ($github, $github-invert),
+"purple": ($purple, $purple-invert),
+"pink": ($pink, $pink-invert));
+$colors: map-merge($colors,
+$addColors);
+// EDIT
 // Edit Link
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
-
-// Edit button rounded
+$link: $white;
+$link-invert: $white-invert;
+$link-focus-border: $white;
+// Add button rounded
 .button {
   &.is-rounded {
     border-radius: $radius-rounded;
@@ -52,7 +48,6 @@ $link-focus-border: $primary;
     padding-right: 1em;
   }
 }
-
 
 // 6. Import the rest of Bulma
 @import "node_modules/bulma/bulma";

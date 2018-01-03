@@ -1,17 +1,14 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
-const concat      =  require('gulp-concat');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
-    return gulp.src(['./src/scss/*.scss'])
+    return gulp.src(['./src/scss/style.scss'])
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('style.css')) 
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
 });
-
 
 // Watch Sass & Serve
 gulp.task('serve', ['sass'], function() {
