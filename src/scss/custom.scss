@@ -48,6 +48,19 @@ $link-focus-border: $white;
     padding-right: 1em;
   }
 }
+// Equal height 
+.columns {
+  &.has-equal-heights {
+    .column {
+      display:-ms-flexbox;
+      display:flex;
+      > * {
+        -ms-flex-positive:1;
+        flex-grow:1;
+      }
+    } 
+  }
+}
 
 // 6. Import the rest of Bulma
 @import "node_modules/bulma/bulma";

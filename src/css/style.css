@@ -4,6 +4,13 @@
   padding-left: 1em;
   padding-right: 1em; }
 
+.columns.has-equal-heights .column {
+  display: -ms-flexbox;
+  display: flex; }
+  .columns.has-equal-heights .column > * {
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+
 /*! bulma.io v0.6.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
