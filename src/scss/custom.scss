@@ -2,6 +2,8 @@
 // Import the initial variables
 @import "node_modules/bulma/sass/utilities/initial-variables";
 @import "node_modules/bulma/sass/utilities/functions";
+@import "node_modules/bulma/sass/utilities/mixins";
+
 // INITIAL VARIABLES
 $white: #fff;
 $white-invert: #fff;
@@ -9,7 +11,8 @@ $red: #db3f89;
 $blue: #5399e3;
 $green: #3abb69;
 // Add a serif family
-$family-serif: "Open Sans", sans-serif;
+$family-serif: "Open Sans",
+sans-serif;
 $radius-rounded: 290486px !default;
 // DERIVED VARIABLES
 // Use the new serif family
@@ -29,35 +32,43 @@ $github: #333;
 $github-invert: findColorInvert($github);
 //Add new color variables to the color map.
 @import "node_modules/bulma/sass/utilities/derived-variables.sass";
-$addColors: (
-  "twitter":($twitter, $twitter-invert),
-  "linkedin": ($linkedin, $linkedin-invert),
-  "github": ($github, $github-invert),
-  "purple": ($purple, $purple-invert),
-  "pink": ($pink, $pink-invert),
-  "orange":($orange, $orange-invert)
-);
-$colors: map-merge($colors, $addColors);
+$addColors: ( "twitter":($twitter, $twitter-invert),
+"linkedin": ($linkedin, $linkedin-invert),
+"github": ($github, $github-invert),
+"purple": ($purple, $purple-invert),
+"pink": ($pink, $pink-invert),
+"orange":($orange, $orange-invert));
+$colors: map-merge($colors,
+$addColors);
 // EDIT
 // Edit Link
 $link: $white;
 $link-invert: $white-invert;
 $link-focus-border: $white;
+$link-hover: $white-invert;
+
 // Add button rounded
 .button {
   &.is-rounded {
+    height: 2.5em;
     border-radius: $radius-rounded;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    box-shadow: 0 .25em .5em rgba(0, 0, 0, .2) !important;
+    transition: all .1s cubic-bezier(.68, -.25, .265, 1.25) !important;
+    &:hover {
+      box-shadow: 0 .5em 1em rgba(0, 0, 0, .2) !important;
+    }
   }
 }
+
 // Equal height
 .columns {
   &.has-equal-heights {
     .column {
       display: -ms-flexbox;
       display: flex;
-      > * {
+      >* {
         -ms-flex-positive: 1;
         flex-grow: 1;
       }

@@ -4,6 +4,13 @@
   z-index: 3;
   .navbar {
     background-color: transparent;
+    .navbar-brand {
+      .navbar-item {
+        img {
+          max-height: 2.25rem;
+        }
+      }
+    }
   }
 }
 
@@ -63,6 +70,7 @@
       background-position: top;
     }
     &.is-photos {
+      overflow-x: hidden;
       .container {
         &.is-fluid {
           margin-left: 0px !important;
@@ -93,6 +101,9 @@
         width: 9%;
         margin: 0 auto;
         position: relative;
+        @include mobile {
+          width: 20%;
+        }
       }
       p {
         a {
