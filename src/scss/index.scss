@@ -12,16 +12,10 @@
     // intro
     &.is-intro {
       background-color: $pink;
-      background: linear-gradient(135deg, $pink, #e5487c);
-      background-size: auto auto;
-      background-size: cover;
-    }
-    &.is-intro-kompetisi {
-      background-color: #089d95;
-      // background: linear-gradient(135deg, #11998e, #38ef7d);
-      background: linear-gradient(300deg, #089d95, #65cb67);
-      background-size: auto auto;
-      background-size: cover;
+      background: url(../images/index/skew-bottom.png), linear-gradient(135deg, $pink, #e5487c);
+      background-size: 100%, cover, cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
     }
     &.is-acara {
       .column {
@@ -63,9 +57,10 @@
     }
     &.is-timeline {
       background-color: fdeeee;
-      background: linear-gradient(to bottom, #fdeeee, #fff);
-      background-size: auto auto;
-      background-size: cover;
+      background: url(../images/index/skew-top.png), linear-gradient(to bottom, #fdeeee, #fff);
+      background-size: 100%, cover, cover;
+      background-repeat: no-repeat;
+      background-position: top;
     }
     &.is-photos {
       .container {
@@ -85,23 +80,6 @@
         }
       }
     }
-  }
-  .clipping-top {
-    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
-    height: 50px;
-    background-color: white;
-    width: 100%;
-    z-index: 2;
-    margin-top: -50px;
-    position: absolute;
-  }
-  .clipping-bottom {
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
-    height: 50px;
-    background-color: white;
-    width: 100%;
-    z-index: 2;
-    position: absolute;
   }
 }
 

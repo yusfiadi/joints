@@ -7712,15 +7712,10 @@ label.panel-block {
 
 .app-content section.is-intro {
   background-color: #f06562;
-  background: linear-gradient(135deg, #f06562, #e5487c);
-  background-size: auto auto;
-  background-size: cover; }
-
-.app-content section.is-intro-kompetisi {
-  background-color: #089d95;
-  background: linear-gradient(300deg, #089d95, #65cb67);
-  background-size: auto auto;
-  background-size: cover; }
+  background: url(../images/index/skew-bottom.png), linear-gradient(135deg, #f06562, #e5487c);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
 
 .app-content section.is-acara .column .box .image {
   margin: 0 auto; }
@@ -7742,9 +7737,10 @@ label.panel-block {
 
 .app-content section.is-timeline {
   background-color: fdeeee;
-  background: linear-gradient(to bottom, #fdeeee, #fff);
-  background-size: auto auto;
-  background-size: cover; }
+  background: url(../images/index/skew-top.png), linear-gradient(to bottom, #fdeeee, #fff);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: top; }
 
 .app-content section.is-photos .container.is-fluid {
   margin-left: 0px !important;
@@ -7757,23 +7753,6 @@ label.panel-block {
     padding: 0; }
     .app-content section.is-photos .container .columns .column img {
       object-fit: cover; }
-
-.app-content .clipping-top {
-  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
-  height: 50px;
-  background-color: white;
-  width: 100%;
-  z-index: 2;
-  margin-top: -50px;
-  position: absolute; }
-
-.app-content .clipping-bottom {
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
-  height: 50px;
-  background-color: white;
-  width: 100%;
-  z-index: 2;
-  position: absolute; }
 
 .app-footer {
   background-color: #f06562;
@@ -7791,9 +7770,10 @@ label.panel-block {
 
 .app-content-kompetisi section.is-intro-kompetisi {
   background-color: #089d95;
-  background: linear-gradient(300deg, #089d95, #65cb67);
-  background-size: auto auto;
-  background-size: cover; }
+  background: url(../images/kompetisi/wave.png), linear-gradient(300deg, #089d95, #65cb67);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
   .app-content-kompetisi section.is-intro-kompetisi .img-kompetisi {
     width: 550px; }
 
