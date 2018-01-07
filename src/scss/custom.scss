@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 // Import the initial variables
 @import "node_modules/bulma/sass/utilities/initial-variables";
 @import "node_modules/bulma/sass/utilities/functions";
@@ -9,8 +9,7 @@ $red: #db3f89;
 $blue: #5399e3;
 $green: #3abb69;
 // Add a serif family
-$family-serif: 'Open Sans',
-sans-serif;
+$family-serif: "Open Sans", sans-serif;
 $radius-rounded: 290486px !default;
 // DERIVED VARIABLES
 // Use the new serif family
@@ -20,6 +19,8 @@ $pink: #f06562;
 $pink-invert: findColorInvert($pink);
 $purple: #684aa0;
 $purple-invert: findColorInvert($purple);
+$orange: #f7931e;
+$orange-invert: findColorInvert($orange);
 $linkedin: #0077b5;
 $linkedin-invert: findColorInvert($linkedin);
 $twitter: #55acee;
@@ -28,13 +29,15 @@ $github: #333;
 $github-invert: findColorInvert($github);
 //Add new color variables to the color map.
 @import "node_modules/bulma/sass/utilities/derived-variables.sass";
-$addColors: ( "twitter":($twitter, $twitter-invert),
-"linkedin": ($linkedin, $linkedin-invert),
-"github": ($github, $github-invert),
-"purple": ($purple, $purple-invert),
-"pink": ($pink, $pink-invert));
-$colors: map-merge($colors,
-$addColors);
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert),
+  "purple": ($purple, $purple-invert),
+  "pink": ($pink, $pink-invert),
+  "orange":($orange, $orange-invert)
+);
+$colors: map-merge($colors, $addColors);
 // EDIT
 // Edit Link
 $link: $white;
@@ -48,17 +51,17 @@ $link-focus-border: $white;
     padding-right: 1em;
   }
 }
-// Equal height 
+// Equal height
 .columns {
   &.has-equal-heights {
     .column {
-      display:-ms-flexbox;
-      display:flex;
+      display: -ms-flexbox;
+      display: flex;
       > * {
-        -ms-flex-positive:1;
-        flex-grow:1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
       }
-    } 
+    }
   }
 }
 
