@@ -16,6 +16,13 @@
     -ms-flex-positive: 1;
     flex-grow: 1; }
 
+@media screen and (max-width: 768px) {
+  .columns.is-reverse-mobile {
+    flex-direction: column-reverse;
+    display: flex; }
+    .columns.is-reverse-mobile .column {
+      width: 100%; } }
+
 /*! bulma.io v0.6.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -7716,6 +7723,21 @@ label.panel-block {
     background-color: transparent; }
     .app-header .navbar .navbar-brand .navbar-item img {
       max-height: 2.25rem; }
+    .app-header .navbar .navbar-item .navbar-link:hover:after {
+      border: 1px solid #e6e6e6;
+      border-right: 0;
+      border-top: 0;
+      content: " ";
+      display: block;
+      height: 0.5em;
+      pointer-events: none;
+      position: absolute;
+      transform: rotate(-45deg);
+      transform-origin: center;
+      width: 0.5em;
+      margin-top: -0.375em;
+      right: 1.125em;
+      top: 50%; }
 
 .app-content section.is-intro {
   background-color: #f06562;
