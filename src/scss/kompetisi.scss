@@ -51,6 +51,20 @@
               }
             }
           }
+          &:nth-child(4) {
+            .box {
+              &::before {
+                border-bottom: 2px solid #E84779;
+              }
+            }
+          }
+          &:nth-child(5) {
+            .box {
+              &::before {
+                border-bottom: 2px solid #C12C74;
+              }
+            }
+          }
         }
       }
     }

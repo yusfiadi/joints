@@ -7765,7 +7765,7 @@ label.panel-block {
   border-bottom: 2px solid #3abb69; }
 
 .app-content section.is-timeline {
-  background-color: fdeeee;
+  background-color: #fdeeee;
   background: url(../images/index/skew-top.png), linear-gradient(to bottom, #fdeeee, #fff);
   background-size: 100%, cover, cover;
   background-repeat: no-repeat;
@@ -7829,6 +7829,10 @@ label.panel-block {
     border-bottom: 2px solid #5399e3; }
   .app-content-kompetisi section.is-acara .columns .column:nth-child(3) .box .subtitle::before {
     border-bottom: 2px solid #f7931e; }
+  .app-content-kompetisi section.is-acara .columns .column:nth-child(4) .box::before {
+    border-bottom: 2px solid #E84779; }
+  .app-content-kompetisi section.is-acara .columns .column:nth-child(5) .box::before {
+    border-bottom: 2px solid #C12C74; }
 
 .app-content-kompetisi section.is-timeline-kompetisi {
   background-color: #cdefde;
