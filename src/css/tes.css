@@ -5,6 +5,7 @@
   -moz-appearance: none;
   appearance: none;
 }
+
 .ccomp {
   /* background-image: url(http://i.imgur.com/lXzJ1eB.png); */
   background-image: url("../images/logoccomp.png");
@@ -14,6 +15,11 @@
 .joints {
   /* background-image: url("../images/kompetisi/business.png"); */
   background-image: url("../images/index/logo-2.png");
+}
+
+.ctf {
+  background-image: url("../images/kompetisi/ctf.png");
+  /* padding: 200p */
 }
 
 .cc-selector input:active + .drinkcard-cc {
@@ -56,4 +62,8 @@ a {
 }
 p {
   margin-bottom: 0.3em;
+}
+
+img.image {
+  margin: auto;
 }
