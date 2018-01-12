@@ -2281,7 +2281,7 @@ a.box:active {
   .textarea.is-focused,
   .textarea:active,
   .textarea.is-active {
-    border-color: #fff;
+    /* border-color: #fff; */
     box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
   .input[disabled],
   .textarea[disabled] {
@@ -2575,7 +2575,7 @@ a.box:active {
     .select select:hover, .select select.is-hovered {
       border-color: #b5b5b5; }
     .select select:focus, .select select.is-focused, .select select:active, .select select.is-active {
-      border-color: #fff;
+      /* border-color: #fff; */
       box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
     .select select[disabled] {
       background-color: whitesmoke;
@@ -3118,7 +3118,7 @@ a.box:active {
   color: #363636;
   display: block;
   font-size: 1rem;
-  font-weight: 700; }
+  font-weight: 300; }
   .label:not(:last-child) {
     margin-bottom: 0.5em; }
   .label.is-small {

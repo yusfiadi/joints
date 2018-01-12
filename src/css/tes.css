@@ -1,0 +1,69 @@
+.cc-selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ccomp {
+  /* background-image: url(http://i.imgur.com/lXzJ1eB.png); */
+  background-image: url("../images/logoccomp.png");
+  background-size: 400px;
+}
+
+.joints {
+  /* background-image: url("../images/kompetisi/business.png"); */
+  background-image: url("../images/index/logo-2.png");
+}
+
+.ctf {
+  background-image: url("../images/kompetisi/ctf.png");
+  /* padding: 200p */
+}
+
+.cc-selector input:active + .drinkcard-cc {
+  opacity: 0.9;
+}
+.cc-selector input:checked + .drinkcard-cc {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  /* transform: translateY(-50px); */
+  transform: scale(1.1);
+}
+.drinkcard-cc {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100px;
+  height: 70px;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  filter: brightness(1.8) grayscale(1) opacity(0.7);
+}
+.drinkcard-cc:hover {
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+/* Extras */
+a:visited {
+  color: #888;
+}
+a {
+  color: #444;
+  text-decoration: none;
+}
+p {
+  margin-bottom: 0.3em;
+}
+
+img.image {
+  margin: auto;
+}
