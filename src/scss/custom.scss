@@ -11,8 +11,7 @@ $red: #db3f89;
 $blue: #5399e3;
 $green: #3abb69;
 // Add a serif family
-$family-serif: "Open Sans",
-sans-serif;
+$family-serif: "Open Sans", sans-serif;
 $radius-rounded: 290486px !default;
 // DERIVED VARIABLES
 // Use the new serif family
@@ -32,14 +31,15 @@ $github: #333;
 $github-invert: findColorInvert($github);
 //Add new color variables to the color map.
 @import "node_modules/bulma/sass/utilities/derived-variables.sass";
-$addColors: ( "twitter":($twitter, $twitter-invert),
-"linkedin": ($linkedin, $linkedin-invert),
-"github": ($github, $github-invert),
-"purple": ($purple, $purple-invert),
-"pink": ($pink, $pink-invert),
-"orange":($orange, $orange-invert));
-$colors: map-merge($colors,
-$addColors);
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert),
+  "purple": ($purple, $purple-invert),
+  "pink": ($pink, $pink-invert),
+  "orange":($orange, $orange-invert)
+);
+$colors: map-merge($colors, $addColors);
 // EDIT
 // Edit Link
 $link: $white;
@@ -47,6 +47,7 @@ $link-invert: $white-invert;
 $link-focus-border: $white;
 $link-hover: $white-invert;
 
+$label-weight: 300;
 // Add button rounded
 .button {
   &.is-rounded {
@@ -54,10 +55,10 @@ $link-hover: $white-invert;
     border-radius: $radius-rounded;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    box-shadow: 0 .25em .5em rgba(0, 0, 0, .2) !important;
-    transition: all .1s cubic-bezier(.68, -.25, .265, 1.25) !important;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.1s cubic-bezier(0.68, -0.25, 0.265, 1.25) !important;
     &:hover {
-      box-shadow: 0 .5em 1em rgba(0, 0, 0, .2) !important;
+      box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2) !important;
     }
   }
 }
@@ -68,7 +69,7 @@ $link-hover: $white-invert;
     .column {
       display: -ms-flexbox;
       display: flex;
-      >* {
+      > * {
         -ms-flex-positive: 1;
         flex-grow: 1;
       }
@@ -79,7 +80,7 @@ $link-hover: $white-invert;
       flex-direction: column-reverse;
       display: flex;
       .column {
-        width: 100%; 
+        width: 100%;
       }
     }
   }
