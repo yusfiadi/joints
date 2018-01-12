@@ -7,7 +7,7 @@ body {
   background: #ecf0f3;
 }
 nav.navbar {
-  border-top: 4px solid #276cda;
+  /* border-top: 4px solid #276cda; */
   margin-bottom: 1rem;
 }
 .navbar-item.brand-text {
@@ -28,9 +28,10 @@ nav.navbar {
   font-weight: 700;
 }
 .menu-list a {
-  color: #0f1d38;
-  font-size: 14px;
+  color: white;
+  font-size: 16px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 .menu-list a:hover {
   background-color: transparent;
@@ -73,8 +74,7 @@ nav.navbar {
   font-weight: 700;
   color: #8f99a3;
 }
-.card-footer-item:hover {
-}
+
 .card-table .table {
   margin-bottom: 0;
 }
