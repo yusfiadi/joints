@@ -37,11 +37,14 @@ nav.navbar {
 }
 .menu-list a:hover {
   background-color: transparent;
-  color: #276cda;
+  /* color: #276cda; */
+  color: black;
 }
 .menu-list a.is-active {
   background-color: transparent;
-  color: #276cda;
+  /* color: #276cda; */
+  color: black;
+
   font-weight: 700;
 }
 .card {
