@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
     crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/dashboard.css">
 </head>
@@ -49,25 +48,42 @@
     </div>
   </nav>
   <!-- END NAV -->
+
+
   <div class="container">
     <div class="columns">
+
+
       <div class="column is-3">
         <aside class="menu">
+
+
           <p class="menu-label">
             General
           </p>
           <ul class="menu-list">
             <li>
-              <a class="is-active">Dashboard</a>
+              <a class="is-active">Beranda</a>
             </li>
             <li>
-              <a>Customers</a>
+              <a>Pembayaran</a>
+            </li>
+            <li>
+              <a>Edit Data</a>
+            </li>
+            <li>
+              <a>Ubah Password</a>
+            </li>
+            <li>
+              <a>Chat</a>
+            </li>
+            <li>
+              <a>Logout</a>
             </li>
           </ul>
-          <p class="menu-label">
-            Administration
-          </p>
-          <ul class="menu-list">
+
+      </div>
+      <!-- <ul class="menu-list">
             <li>
               <a>Team Settings</a>
             </li>
@@ -94,25 +110,12 @@
             <li>
               <a>Authentication</a>
             </li>
-          </ul>
-          <p class="menu-label">
-            Transactions
-          </p>
-          <ul class="menu-list">
-            <li>
-              <a>Payments</a>
-            </li>
-            <li>
-              <a>Transfers</a>
-            </li>
-            <li>
-              <a>Balance</a>
-            </li>
-          </ul>
-        </aside>
-      </div>
+          </ul> -->
+
+      </aside>
+
       <div class="column is-9">
-        <div class="columns">
+        <div class="columns is-centered" style="height:auto;">
           <div class="column is-6">
             <div class="box">
               <section>
@@ -129,60 +132,24 @@
                     <input class="input " type="text " placeholder="Text input ">
                   </div>
                 </div>
-                <div class="field ">
-                  <label class="label ">Jumlah Anggota</label>
-                  <div class="control ">
-                    <input class="input " type="text " placeholder="Text input ">
-                  </div>
-                </div>
-              </section>
-            </div>
-            <!-- </div> -->
-            <!-- <div class="column is-6"> -->
-            <div class="box">
-              <section>
-                <h6 class="title is-6">Data Anggota 1</h6>
-                <div class=" field ">
-                  <label class="label ">Nama Lengkap</label>
-                  <div class="control ">
-                    <input class="input " type="text " placeholder="Text input ">
-                  </div>
-                </div>
-                <div class="field ">
-                  <label class="label ">NIM</label>
-                  <div class="control ">
-                    <input class="input " type="text " placeholder="Text input ">
-                  </div>
-                </div>
-                <div class="field ">
-                  <label class="label ">No Telepon</label>
-                  <div class="control ">
-                    <input class="input " type="text " placeholder="Text input ">
-                  </div>
-                </div>
 
-                <div class="field">
-                  <div class="file is-info has-name">
-                    <label class="file-label">
-                      <input class="file-input" type="file" name="resume">
-                      <span class="file-cta">
-                        <span class="file-icon">
-                          <i class="fas fa-upload"></i>
-                        </span>
-                        <span class="file-label">
-                          Upload KTM
-                        </span>
-                      </span>
-                      <span class="file-name">
-                        ktm.png
-                      </span>
-                    </label>
+                <!-- <div class="control">
+                  <div class="select">
+                    <label class="label ">Jumlah Anggota</label>
+
+                    <select>
+                      <option>Pilih Jumlah Anggota</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
                   </div>
-                </div>
+                </div> -->
               </section>
             </div>
           </div>
-          <div class="column is-6">
+        </div>
+        <div class="columns">
+          <div class="column">
             <div class="box">
               <section>
                 <h6 class="title is-6">Data Ketua</h6>
@@ -204,8 +171,8 @@
                     <input class="input " type="text " placeholder="Text input ">
                   </div>
                 </div>
-
                 <div class="field">
+                  <label class="label ">Upload KTM</label>
                   <div class="file is-info has-name">
                     <label class="file-label">
                       <input class="file-input" type="file" name="resume">
@@ -214,7 +181,7 @@
                           <i class="fas fa-upload"></i>
                         </span>
                         <span class="file-label">
-                          Upload KTM
+                          Upload file
                         </span>
                       </span>
                       <span class="file-name">
@@ -225,8 +192,52 @@
                 </div>
               </section>
             </div>
-            <!-- </div> -->
-            <!-- <div class="column is-6"> -->
+          </div>
+          <div class="column is-4">
+            <div class="box">
+              <section>
+                <h6 class="title is-6">Data Anggota 1</h6>
+                <div class=" field ">
+                  <label class="label ">Nama Lengkap</label>
+                  <div class="control ">
+                    <input class="input " type="text " placeholder="Text input ">
+                  </div>
+                </div>
+                <div class="field ">
+                  <label class="label ">NIM</label>
+                  <div class="control ">
+                    <input class="input " type="text " placeholder="Text input ">
+                  </div>
+                </div>
+                <div class="field ">
+                  <label class="label ">No Telepon</label>
+                  <div class="control ">
+                    <input class="input " type="text " placeholder="Text input ">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label ">Upload KTM</label>
+                  <div class="file is-info has-name">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume">
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">
+                          Upload file
+                        </span>
+                      </span>
+                      <span class="file-name">
+                        ktm.png
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="column is-4">
             <div class="box">
               <section>
                 <h6 class="title is-6">Data Anggota 2</h6>
@@ -248,8 +259,8 @@
                     <input class="input " type="text " placeholder="Text input ">
                   </div>
                 </div>
-
                 <div class="field">
+                  <label class="label ">Upload KTM</label>
                   <div class="file is-info has-name">
                     <label class="file-label">
                       <input class="file-input" type="file" name="resume">
@@ -258,7 +269,7 @@
                           <i class="fas fa-upload"></i>
                         </span>
                         <span class="file-label">
-                          Upload KTM
+                          Upload file
                         </span>
                       </span>
                       <span class="file-name">
@@ -270,6 +281,7 @@
               </section>
             </div>
           </div>
+
         </div>
         <!-- <section class="hero is-info welcome is-small ">
           <div class="hero-body ">
