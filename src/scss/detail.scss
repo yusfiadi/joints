@@ -1,0 +1,76 @@
+.app-content-detail {
+    section {
+        &.is-intro {
+            background: #089d95;
+            background: url(../images/kompetisi/wave.png), -webkit-linear-gradient(300deg, #089d95, #65cb67);
+            background: url(../images/kompetisi/wave.png), linear-gradient(300deg, #089d95, #65cb67);
+            background-size: 100%, cover, cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            img {
+                width: 15%;
+            }
+        }
+        &.is-hadiah {
+            background-color: #fafafa;
+            .column {
+                .box {
+                    margin-top: 80px;
+                    box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5);
+                    .box-icon {
+                        margin: 0 auto;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 100%; // border: 2px solid black;
+                        background-color: white;
+                        margin-top: -80px;
+                        position: relative;
+                        box-shadow: 0 5px 5px 0 rgba(219, 219, 219, 0.25);
+                        img {
+                            width: 80px;
+                            height: 80px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        &.is-timeline {
+            background: #fff !important;
+        }
+        &.is-lomba-lain {
+            background-color: #fafafa;
+            .box {
+                box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5);
+            }            
+        }
+    }
+}
+
+.app-footer-detail {
+    background: #089d95;
+    background: -webkit-linear-gradient(300deg, #089d95, #65cb67);
+    background: linear-gradient(300deg, #089d95, #65cb67);
+    padding: 3rem 1rem;
+    .container {
+        .content {
+            img {
+                width: 9%;
+                margin: 0 auto;
+                position: relative;
+                @include mobile {
+                    width: 20%;
+                }
+            }
+            p {
+                a {
+                    padding: 0 5px;
+                }
+            }
+        }
+        .footer-bottom {
+            border-top: 1px solid $white;
+            padding-top: 1rem;
+        }
+    }
+}

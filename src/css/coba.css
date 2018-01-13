@@ -1,0 +1,37 @@
+.app-content-detail section.is-intro {
+  background: #089d95;
+  background: url(../images/kompetisi/wave.png), -webkit-linear-gradient(300deg, #089d95, #65cb67);
+  background: url(../images/kompetisi/wave.png), linear-gradient(300deg, #089d95, #65cb67);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .app-content-detail section.is-intro img {
+    width: 15%; }
+
+.app-content-detail section.is-timeline {
+  background: #fff !important; }
+
+.app-content-detail section.is-hadiah {
+  background-color: #fafafa; }
+  .app-content-detail section.is-hadiah .column .box {
+    margin-top: 80px;
+    box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
+    .app-content-detail section.is-hadiah .column .box .box-icon {
+      margin: 0 auto;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      background-color: white;
+      margin-top: -80px;
+      position: relative;
+      box-shadow: 0 5px 5px 0 rgba(219, 219, 219, 0.25); }
+      .app-content-detail section.is-hadiah .column .box .box-icon img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto; }
+
+.app-footer-detail {
+  background: #089d95;
+  background: -webkit-linear-gradient(300deg, #089d95, #65cb67);
+  background: linear-gradient(300deg, #089d95, #65cb67);
+  padding: 3rem 1rem; }

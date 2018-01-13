@@ -2281,7 +2281,7 @@ a.box:active {
   .textarea.is-focused,
   .textarea:active,
   .textarea.is-active {
-    /* border-color: #fff; */
+    border-color: #fff;
     box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
   .input[disabled],
   .textarea[disabled] {
@@ -2575,7 +2575,7 @@ a.box:active {
     .select select:hover, .select select.is-hovered {
       border-color: #b5b5b5; }
     .select select:focus, .select select.is-focused, .select select:active, .select select.is-active {
-      /* border-color: #fff; */
+      border-color: #fff;
       box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
     .select select[disabled] {
       background-color: whitesmoke;
@@ -7874,5 +7874,60 @@ label.panel-block {
   .app-footer-kompetisi .container .content p a {
     padding: 0 5px; }
   .app-footer-kompetisi .container .footer-bottom {
+    border-top: 1px solid #fff;
+    padding-top: 1rem; }
+
+.app-content-detail section.is-intro {
+  background: #089d95;
+  background: url(../images/kompetisi/wave.png), -webkit-linear-gradient(300deg, #089d95, #65cb67);
+  background: url(../images/kompetisi/wave.png), linear-gradient(300deg, #089d95, #65cb67);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .app-content-detail section.is-intro img {
+    width: 15%; }
+
+.app-content-detail section.is-hadiah {
+  background-color: #fafafa; }
+  .app-content-detail section.is-hadiah .column .box {
+    margin-top: 80px;
+    box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
+    .app-content-detail section.is-hadiah .column .box .box-icon {
+      margin: 0 auto;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      background-color: white;
+      margin-top: -80px;
+      position: relative;
+      box-shadow: 0 5px 5px 0 rgba(219, 219, 219, 0.25); }
+      .app-content-detail section.is-hadiah .column .box .box-icon img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto; }
+
+.app-content-detail section.is-timeline {
+  background: #fff !important; }
+
+.app-content-detail section.is-lomba-lain {
+  background-color: #fafafa; }
+  .app-content-detail section.is-lomba-lain .box {
+    box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
+
+.app-footer-detail {
+  background: #089d95;
+  background: -webkit-linear-gradient(300deg, #089d95, #65cb67);
+  background: linear-gradient(300deg, #089d95, #65cb67);
+  padding: 3rem 1rem; }
+  .app-footer-detail .container .content img {
+    width: 9%;
+    margin: 0 auto;
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      .app-footer-detail .container .content img {
+        width: 20%; } }
+  .app-footer-detail .container .content p a {
+    padding: 0 5px; }
+  .app-footer-detail .container .footer-bottom {
     border-top: 1px solid #fff;
     padding-top: 1rem; }
