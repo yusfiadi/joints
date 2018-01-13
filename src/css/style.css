@@ -7723,21 +7723,6 @@ label.panel-block {
     background-color: transparent; }
     .app-header .navbar .navbar-brand .navbar-item img {
       max-height: 2.25rem; }
-    .app-header .navbar .navbar-item .navbar-link:hover:after {
-      border: 1px solid #e6e6e6;
-      border-right: 0;
-      border-top: 0;
-      content: " ";
-      display: block;
-      height: 0.5em;
-      pointer-events: none;
-      position: absolute;
-      transform: rotate(-45deg);
-      transform-origin: center;
-      width: 0.5em;
-      margin-top: -0.375em;
-      right: 1.125em;
-      top: 50%; }
 
 .app-content section.is-intro {
   background-color: #f06562;
@@ -7788,6 +7773,11 @@ label.panel-block {
   background-color: #f06562;
   background: linear-gradient(135deg, #f06562, #e5487c);
   padding: 3rem 1rem; }
+  .app-footer.is-footer-detail {
+    background: #089d95;
+    background: -webkit-linear-gradient(300deg, #089d95, #65cb67);
+    background: linear-gradient(300deg, #089d95, #65cb67);
+    padding: 3rem 1rem; }
   .app-footer .container .content img {
     width: 9%;
     margin: 0 auto;
@@ -7913,21 +7903,3 @@ label.panel-block {
   background-color: #fafafa; }
   .app-content-detail section.is-lomba-lain .box {
     box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
-
-.app-footer-detail {
-  background: #089d95;
-  background: -webkit-linear-gradient(300deg, #089d95, #65cb67);
-  background: linear-gradient(300deg, #089d95, #65cb67);
-  padding: 3rem 1rem; }
-  .app-footer-detail .container .content img {
-    width: 9%;
-    margin: 0 auto;
-    position: relative; }
-    @media screen and (max-width: 768px) {
-      .app-footer-detail .container .content img {
-        width: 20%; } }
-  .app-footer-detail .container .content p a {
-    padding: 0 5px; }
-  .app-footer-detail .container .footer-bottom {
-    border-top: 1px solid #fff;
-    padding-top: 1rem; }

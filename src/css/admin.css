@@ -1,0 +1,23 @@
+html, body {
+  background-color: #F5F8FA; }
+
+.app-header-dashboard {
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+  .app-header-dashboard .navbar {
+    background-color: #65cb67;
+    box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5); }
+    .app-header-dashboard .navbar .navbar-brand .navbar-item img {
+      max-height: 2.25rem; }
+
+.app-content-dashboard {
+  background-color: #F5F8FA;
+  padding-top: 48px; }
+  .app-content-dashboard .box {
+    box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5);
+    border-radius: 2px; }
+
+.app-footer-dashboard {
+  background-color: #F5F8FA;
+  padding: 1rem 1rem; }

@@ -21,7 +21,7 @@
                         margin: 0 auto;
                         height: 100px;
                         width: 100px;
-                        border-radius: 100%; // border: 2px solid black;
+                        border-radius: 100%;
                         background-color: white;
                         margin-top: -80px;
                         position: relative;
@@ -43,34 +43,6 @@
             .box {
                 box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5);
             }            
-        }
-    }
-}
-
-.app-footer-detail {
-    background: #089d95;
-    background: -webkit-linear-gradient(300deg, #089d95, #65cb67);
-    background: linear-gradient(300deg, #089d95, #65cb67);
-    padding: 3rem 1rem;
-    .container {
-        .content {
-            img {
-                width: 9%;
-                margin: 0 auto;
-                position: relative;
-                @include mobile {
-                    width: 20%;
-                }
-            }
-            p {
-                a {
-                    padding: 0 5px;
-                }
-            }
-        }
-        .footer-bottom {
-            border-top: 1px solid $white;
-            padding-top: 1rem;
         }
     }
 }
