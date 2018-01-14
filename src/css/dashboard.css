@@ -12,6 +12,10 @@ body {
     box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5); }
     .app-navbar-dashboard .navbar .navbar-brand .navbar-item img {
       max-height: 2.25rem; }
+    .app-navbar-dashboard .navbar .navbar-item i {
+      color: #4a4a4a; }
+      .app-navbar-dashboard .navbar .navbar-item i:hover {
+        color: #65cb67; }
     .app-navbar-dashboard .navbar .navbar-item .navbar-link {
       color: #4a4a4a; }
       .app-navbar-dashboard .navbar .navbar-item .navbar-link figure img {
@@ -62,7 +66,7 @@ body {
         right: 1.125em;
         top: 50%; }
     .app-navbar-dashboard .navbar .navbar-item .navbar-dropdown .navbar-item:hover {
-      color: #65cb67; }
+      color: #65cb67 !important; }
 
 .app-main-dashboard .column .menu {
   padding-top: 88px;
@@ -70,15 +74,26 @@ body {
   box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5);
   margin-top: 12px; }
   .app-main-dashboard .column .menu .menu-list li a {
-    padding-left: 6px;
+    padding-left: 7px;
     border-left: 18px solid #fff;
     padding-top: 12px;
     padding-bottom: 12px; }
     .app-main-dashboard .column .menu .menu-list li a.is-active {
-      border-left: 18px solid #65cb67;
+      border-left: 17px solid #65cb67;
       color: #65cb67; }
     .app-main-dashboard .column .menu .menu-list li a:hover {
       color: #65cb67; }
+  .app-main-dashboard .column .menu .menu-footer {
+    padding-left: 24px; }
+    .app-main-dashboard .column .menu .menu-footer p a {
+      margin-right: 5px; }
+    .app-main-dashboard .column .menu .menu-footer p:nth-child(1) {
+      margin-bottom: 10px; }
+  .app-main-dashboard .column .menu.is-fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 16.66667%; }
 
 .app-main-dashboard .main {
   background-color: #F5F8FA;

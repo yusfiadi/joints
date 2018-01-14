@@ -6,480 +6,320 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link rel="stylesheet" type="text/css" href="./css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 </head>
 
 <body>
-
   <!-- START NAV -->
-  <!-- <nav class="navbar">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item brand-text" href="../">
-          Bulma Admin
-        </a>
-        <div class="navbar-burger burger" data-target="navMenu">
-          <span></span>
-          <span></span>
-          <span></span>
+  <header class="app-navbar-dashboard">
+      <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="images/logo-hijau.png" alt="Logo">
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </div>
-      </div>
-      <div id="navMenu" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="admin.html">
-            Home
-          </a>
-          <a class="navbar-item" href="admin.html">
-            Orders
-          </a>
-          <a class="navbar-item" href="admin.html">
-            Payments
-          </a>
-          <a class="navbar-item" href="admin.html">
-            Exceptions
-          </a>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-hidden-tablet">
+               Beranda
+            </a>
+            <a class="navbar-item is-hidden-tablet">
+              Pembayaran
+            </a>
+            <a class="navbar-item is-hidden-tablet">
+              Data Tim
+            </a>
+            <a class="navbar-item is-hidden-tablet">
+              Chat
+            </a>
+            <a class="navbar-item">
+              <span class="badge is-badge-light-green" data-badge="1">
+                <i class="fa fa-bell-o fa-fw"></i>
+              </span>
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="/documentation/overview/start/">
+                <figure class="image is-32x32" style="margin-right:.5em;">
+                  <img src="https://lh3.googleusercontent.com/-HqtRKk8CI_Y/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT7BMTqURpGoFnEZZi68CIEGKv5QtA/mo/photo.jpg?sz=46">
+                </figure>
+                Tim Satu
+              </a>
+              <div class="navbar-dropdown is-right">
+                <a class="navbar-item" href="/documentation/overview/start/">
+                  Settings                
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                  Sign Out                
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
-      </div>
-    </div>
-  </nav> -->
+      </nav>
+    </header>
   <!-- END NAV -->
-
-
-  <!-- <div class="container"> -->
-
-  <!-- <section class="hero is-fullheight" style="background: linear-gradient(300deg, #089d95, #65cb67);"> -->
-
-  <div class="columns">
-    <div class="column is-3">
-      <div class="hero is-fullheight" style="background: linear-gradient(300deg, #089d95, #65cb67);">
-        <aside class="menu" style="margin-left:20px;margin-top:50px;">
-          <div class="info has-text-centered">
-            <img src="images/index/logo.png" alt="Logo" style="width:170px;margin-bottom:40px;">
-            <h5 class="title is-5">Nama Tim</h5>
-            <h5 class="title is-5">Email</h5>
-            <h7 class="subtitle is-6">Status : Aktif</h7>
+  <!-- MAIN & SIDE NAV -->
+  <main class="app-main-dashboard">
+    <div class="columns">
+      <div class="column is-2 is-paddingless is-narrow-mobile is-fullheight section is-hidden-mobile">
+        <aside class="menu hero is-fullheight is-fixed">
+            <ul class="menu-list">
+                <li>
+                  <a class="is-active">
+                      <i class="fa fa-home fa-fw"></i>
+                      Beranda
+                  </a>
+                </li>
+                <li>
+                  <a class="">
+                    <i class="fa fa-credit-card fa-fw"></i>
+                    Pembayaran</a>
+                </li>
+                <li>
+                  <a>
+                      <i class="fa fa-pencil-square-o fa-fw"></i>
+                      Data Tim
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="fa fa-comments-o fa-sw"></i>
+                    Chat
+                  </a>
+                </li>
+              </ul>
+          <div class="menu-footer has-text-left">
+            <!-- <a class="button is-success is-rounded" style="width:170px;margin-bottom:20px;">Logout</a> -->
+            <p>
+              <a class="has-text-light-green" href="https://facebook.com/jointsugm" class="">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="has-text-light-green" href="https://instagram.com/jointsugm" class="">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a class="has-text-light-green" href="https://twitter.com/jointsugm" class="">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a class="has-text-light-green" href="https://www.linkedin.com/company/13177165" class="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </p>
+            <p>© 2018 Joints UGM</p>
+            <br>
           </div>
-
-          <hr class="garis">
-          <ul class="menu-list">
-            <li>
-              <a>Beranda</a>
-            </li>
-            <li>
-              <a>Pembayaran</a>
-            </li>
-            <li>
-              <a class="is-active">Edit Data</a>
-            </li>
-            <li>
-              <a>Ubah Password</a>
-            </li>
-            <li>
-              <a>Chat</a>
-            </li>
-          </ul>
-          <div class="has-text-centered">
-            <a class="button is-orange is-rounded" style="width:170px;">Logout</a>
-          </div>
-
         </aside>
       </div>
-    </div>
-
-    <div class="column is-9" style="margin-top:50px;">
-      <div class="columns is-centered" style="height:auto;">
-        <div class="column is-5">
-          <div class="box">
-            <section>
-              <h6 class="title is-6 has-text-centered">Data Tim</h6>
-              <div class=" field ">
-                <label class="label ">Nama Tim</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Cabang Kompetisi</label>
-                <div class="control">
-                  <div class="select is-fullwidth">
-                    <select>
-                      <option>---- Pilih Cabang ----</option>
-                      <option>Programming Competition Session</option>
-                      <option>Apps Innovation</option>
-                      <option>Business IT Plan</option>
-                      <option>Capture The Flag</option>
-                      <option>Data Mining</option>
-                    </select>
+      <div class="column is-10 is-paddingless">
+        <div class="main hero is-fullheight">
+          <h1 class="subtitle">Selamat Datang di Beranda</h1>
+          <div class="columns">
+            <!-- Data Tim -->
+            <div class="column">
+              <div class="box">
+                <section>
+                  <h6 class="title is-6 has-text-centered">Data Tim</h6>
+                  <div class=" field ">
+                    <label class="label ">Nama Tim</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="field ">
-                <label class="label ">Asal Instansi</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
 
-              <!-- <div class="control">
-                  <div class="select">
+                  <div class="field">
+                    <label class="label">Cabang Kompetisi</label>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>---- Pilih Cabang ----</option>
+                          <option>Programming Competition Session</option>
+                          <option>Apps Innovation</option>
+                          <option>Business IT Plan</option>
+                          <option>Capture The Flag</option>
+                          <option>Data Mining</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="field ">
+                    <label class="label ">Asal Instansi</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+
+
+                  <div class="field">
                     <label class="label ">Jumlah Anggota</label>
-
-                    <select>
-                      <option>Pilih Jumlah Anggota</option>
-                      <option>1</option>
-                      <option>2</option>
-                    </select>
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>---- Pilih Jumlah Anggota ----</option>
+                          <option>1</option>
+                          <option>2</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
-                </div> -->
-            </section>
+                </section>
+              </div>
+            </div>
+            <!-- End Data Tim -->
+          </div>
+          <h1 class="subtitle">Selamat Datang di Beranda</h1>
+          <div class="columns">
+            <!-- Ketua Tim -->
+            <div class="column">
+              <div class="box">
+                <section>
+                  <h6 class="title is-6 has-text-centered">Data Ketua</h6>
+                  <div class=" field ">
+                    <label class="label ">Nama Lengkap</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+                  <div class="field ">
+                    <label class="label ">NIM</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+                  <div class="field ">
+                    <label class="label ">No Telepon</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Upload KTM</label>
+                    <div class="file is-light-green has-name">
+                      <label class="file-label">
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                          <span class="icon">
+                            <i class="fa fa-upload fa-sw"></i>
+                          </span>
+                          <span class="file-label">
+                            Upload file
+                          </span>
+                        </span>
+                        <span class="file-name">
+                          ktm.png
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- End Ketua Tim -->
+            <!-- Anggota 1 -->
+            <div class="column">
+              <div class="box">
+                <section>
+                  <h6 class="title is-6 has-text-centered">Data Anggota 1</h6>
+                  <div class=" field ">
+                    <label class="label ">Nama Lengkap</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+                  <div class="field ">
+                    <label class="label ">NIM</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+                  <div class="field ">
+                    <label class="label ">No Telepon</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label ">Upload KTM</label>
+                    <div class="file is-light-green has-name">
+                      <label class="file-label">
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                          <span class="file-icon">
+                            <i class="fa fa-upload fa-sw"></i>
+                          </span>
+                          <span class="file-label">
+                            Upload file
+                          </span>
+                        </span>
+                        <span class="file-name">
+                          ktm.png
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- End Anggota 1 -->
+            <!-- Anggota 2 -->
+            <div class="column">
+              <div class="box">
+                <section>
+                  <h6 class="title is-6 has-text-centered">Data Anggota 2</h6>
+                  <div class=" field ">
+                    <label class="label ">Nama Lengkap</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+                  <div class="field ">
+                    <label class="label ">NIM</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+                  <div class="field ">
+                    <label class="label ">No Telepon</label>
+                    <div class="control ">
+                      <input class="input " type="text " placeholder="Text input ">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label ">Upload KTM</label>
+                    <div class="file is-light-green has-name">
+                      <label class="file-label">
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                          <span class="file-icon">
+                            <i class="fa fa-upload fa-sw"></i>
+                          </span>
+                          <span class="file-label">
+                            Upload file
+                          </span>
+                        </span>
+                        <span class="file-name">
+                          ktm.png
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- End Anggota 2 -->
           </div>
         </div>
       </div>
-      <div class="columns" style="height:auto;">
-        <div class="column is-4">
-          <div class="box">
-            <section>
-              <h6 class="title is-6 has-text-centered">Data Ketua</h6>
-              <div class=" field ">
-                <label class="label ">Nama Lengkap</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-              <div class="field ">
-                <label class="label ">NIM</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-              <div class="field ">
-                <label class="label ">No Telepon</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Upload KTM</label>
-                <div class="file is-info has-name">
-                  <label class="file-label">
-                    <input class="file-input" type="file" name="resume">
-                    <span class="file-cta">
-                      <span class="icon">
-                        <i class="fas fa-upload"></i>
-                      </span>
-                      <span class="file-label">
-                        Upload file
-                      </span>
-                    </span>
-                    <span class="file-name">
-                      ktm.png
-                    </span>
-                  </label>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="box">
-            <section>
-              <h6 class="title is-6 has-text-centered">Data Anggota 1</h6>
-              <div class=" field ">
-                <label class="label ">Nama Lengkap</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-              <div class="field ">
-                <label class="label ">NIM</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-              <div class="field ">
-                <label class="label ">No Telepon</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-              <div class="field">
-                <label class="label ">Upload KTM</label>
-                <div class="file is-info has-name">
-                  <label class="file-label">
-                    <input class="file-input" type="file" name="resume">
-                    <span class="file-cta">
-                      <span class="file-icon">
-                        <i class="fas fa-upload"></i>
-                      </span>
-                      <span class="file-label">
-                        Upload file
-                      </span>
-                    </span>
-                    <span class="file-name">
-                      ktm.png
-                    </span>
-                  </label>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="box">
-            <section>
-              <h6 class="title is-6 has-text-centered">Data Anggota 2</h6>
-              <div class=" field ">
-                <label class="label ">Nama Lengkap</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-              <div class="field ">
-                <label class="label ">NIM</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-              <div class="field ">
-                <label class="label ">No Telepon</label>
-                <div class="control ">
-                  <input class="input " type="text " placeholder="Text input ">
-                </div>
-              </div>
-              <div class="field">
-                <label class="label ">Upload KTM</label>
-                <div class="file is-info has-name">
-                  <label class="file-label">
-                    <input class="file-input" type="file" name="resume">
-                    <span class="file-cta">
-                      <span class="file-icon">
-                        <i class="fas fa-upload"></i>
-                      </span>
-                      <span class="file-label">
-                        Upload file
-                      </span>
-                    </span>
-                    <span class="file-name">
-                      ktm.png
-                    </span>
-                  </label>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-
-      </div>
-      <!-- <section class="hero is-info welcome is-small ">
-          <div class="hero-body ">
-            <div class="container ">
-              <h1 class="title ">
-                Hello, Admin.
-              </h1>
-              <h2 class="subtitle ">
-                I hope you are having a great day!
-              </h2>
-            </div>
-          </div>
-        </section> -->
-      <!-- <section class="info-tiles ">
-          <div class="tile is-ancestor has-text-centered ">
-            <div class="tile is-parent ">
-              <article class="tile is-child box ">
-                <p class="title ">439k</p>
-                <p class="subtitle ">Users</p>
-              </article>
-            </div>
-            <div class="tile is-parent ">
-              <article class="tile is-child box ">
-                <p class="title ">59k</p>
-                <p class="subtitle ">Products</p>
-              </article>
-            </div>
-            <div class="tile is-parent ">
-              <article class="tile is-child box ">
-                <p class="title ">3.4k</p>
-                <p class="subtitle ">Open Orders</p>
-              </article>
-            </div>
-            <div class="tile is-parent ">
-              <article class="tile is-child box ">
-                <p class="title ">19</p>
-                <p class="subtitle ">Exceptions</p>
-              </article>
-            </div>
-          </div>
-        </section> -->
-      <!-- <div class="columns ">
-          <div class="column is-6 ">
-            <div class="card events-card ">
-              <header class="card-header ">
-                <p class="card-header-title ">
-                  Events
-                </p>
-                <a href="# " class="card-header-icon " aria-label="more options ">
-                  <span class="icon ">
-                    <i class="fa fa-angle-down " aria-hidden="true "></i>
-                  </span>
-                </a>
-              </header>
-              <div class="card-table ">
-                <div class="content ">
-                  <table class="table is-fullwidth is-striped ">
-                    <tbody>
-                      <tr>
-                        <td width="5% ">
-                          <i class="fa fa-bell-o "></i>
-                        </td>
-                        <td>Lorum ipsum dolem aire</td>
-                        <td>
-                          <a class="button is-small is-primary " href="# ">Action</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="5% ">
-                          <i class="fa fa-bell-o "></i>
-                        </td>
-                        <td>Lorum ipsum dolem aire</td>
-                        <td>
-                          <a class="button is-small is-primary " href="# ">Action</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="5% ">
-                          <i class="fa fa-bell-o "></i>
-                        </td>
-                        <td>Lorum ipsum dolem aire</td>
-                        <td>
-                          <a class="button is-small is-primary " href="# ">Action</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="5% ">
-                          <i class="fa fa-bell-o "></i>
-                        </td>
-                        <td>Lorum ipsum dolem aire</td>
-                        <td>
-                          <a class="button is-small is-primary " href="# ">Action</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="5% ">
-                          <i class="fa fa-bell-o "></i>
-                        </td>
-                        <td>Lorum ipsum dolem aire</td>
-                        <td>
-                          <a class="button is-small is-primary " href="# ">Action</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="5% ">
-                          <i class="fa fa-bell-o "></i>
-                        </td>
-                        <td>Lorum ipsum dolem aire</td>
-                        <td>
-                          <a class="button is-small is-primary " href="# ">Action</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="5% ">
-                          <i class="fa fa-bell-o "></i>
-                        </td>
-                        <td>Lorum ipsum dolem aire</td>
-                        <td>
-                          <a class="button is-small is-primary " href="# ">Action</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="5% ">
-                          <i class="fa fa-bell-o "></i>
-                        </td>
-                        <td>Lorum ipsum dolem aire</td>
-                        <td>
-                          <a class="button is-small is-primary " href="# ">Action</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="5% ">
-                          <i class="fa fa-bell-o "></i>
-                        </td>
-                        <td>Lorum ipsum dolem aire</td>
-                        <td>
-                          <a class="button is-small is-primary " href="# ">Action</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <footer class="card-footer ">
-                <a href="# " class="card-footer-item ">View All</a>
-              </footer>
-            </div>
-          </div>
-          <div class="column is-6 ">
-            <div class="card ">
-              <header class="card-header ">
-                <p class="card-header-title ">
-                  Inventory Search
-                </p>
-                <a href="# " class="card-header-icon " aria-label="more options ">
-                  <span class="icon ">
-                    <i class="fa fa-angle-down " aria-hidden="true "></i>
-                  </span>
-                </a>
-              </header>
-              <div class="card-content ">
-                <div class="content ">
-                  <div class="control has-icons-left has-icons-right ">
-                    <input class="input is-large " type="text " placeholder=" ">
-                    <span class="icon is-medium is-left ">
-                      <i class="fa fa-search "></i>
-                    </span>
-                    <span class="icon is-medium is-right ">
-                      <i class="fa fa-check "></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card ">
-              <header class="card-header ">
-                <p class="card-header-title ">
-                  User Search
-                </p>
-                <a href="# " class="card-header-icon " aria-label="more options ">
-                  <span class="icon ">
-                    <i class="fa fa-angle-down " aria-hidden="true "></i>
-                  </span>
-                </a>
-              </header>
-              <div class="card-content ">
-                <div class="content ">
-                  <div class="control has-icons-left has-icons-right ">
-                    <input class="input is-large " type="text " placeholder=" ">
-                    <span class="icon is-medium is-left ">
-                      <i class="fa fa-search "></i>
-                    </span>
-                    <span class="icon is-medium is-right ">
-                      <i class="fa fa-check "></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
     </div>
-  </div>
-  <!-- </section> gradient -->
-  <!-- </div> -->
-  <script async type="text/javascript " src="../js/bulma.js "></script>
+  </main>
+  <!-- END MAIN & SIDE NAV -->
 </body>
 
 </html>

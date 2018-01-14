@@ -3,6 +3,8 @@
 @import "node_modules/bulma/sass/utilities/initial-variables";
 @import "node_modules/bulma/sass/utilities/functions";
 @import "node_modules/bulma/sass/utilities/mixins";
+@import 'node_modules/bulma-extensions/bulma-badge/bulma-badge';
+
 
 // INITIAL VARIABLES
 $white: #fff;
@@ -23,6 +25,8 @@ $purple: #684aa0;
 $purple-invert: findColorInvert($purple);
 $orange: #f7931e;
 $orange-invert: findColorInvert($orange);
+$light-green: #65cb67;
+$light-green-invert: findColorInvert($light-green);
 $linkedin: #0077b5;
 $linkedin-invert: findColorInvert($linkedin);
 $twitter: #55acee;
@@ -37,7 +41,8 @@ $addColors: (
   "github": ($github, $github-invert),
   "purple": ($purple, $purple-invert),
   "pink": ($pink, $pink-invert),
-  "orange":($orange, $orange-invert)
+  "orange":($orange, $orange-invert),
+  "light-green":($light-green,$light-green-invert)
 );
 $colors: map-merge($colors, $addColors);
 // EDIT

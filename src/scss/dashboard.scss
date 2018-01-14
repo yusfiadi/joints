@@ -19,6 +19,12 @@ body {
             }
         }
         .navbar-item {
+            i {
+                color: #4a4a4a;
+                &:hover {
+                    color: #65cb67;
+                }
+            }
             .navbar-link {
                 color: #4a4a4a;
                 figure {
@@ -78,7 +84,7 @@ body {
             .navbar-dropdown {
                 .navbar-item {
                     &:hover {
-                        color: #65cb67;
+                        color: #65cb67 !important;
                     }
                 }
             }
@@ -96,12 +102,12 @@ body {
             .menu-list {
                 li {
                     a {
-                        padding-left: 6px;
+                        padding-left: 7px;
                         border-left: 18px solid #fff;
                         padding-top: 12px;
                         padding-bottom: 12px;
                         &.is-active {
-                            border-left: 18px solid #65cb67;
+                            border-left: 17px solid #65cb67;
                             color: #65cb67;
                         }
                         &:hover {
@@ -110,13 +116,32 @@ body {
                     }
                 }
             }
+            .menu-footer {
+                padding-left: 24px;
+                p {
+                    a {
+                        margin-right: 5px;
+                    }
+                    &:nth-child(1) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            &.is-fixed {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                width: 16.66667%;
+            }
         }
     }
     .main {
         background-color: #F5F8FA;
         padding-top: 100px;
-        padding-right: 32px;
-        padding-left: 32px;
+        @include desktop {
+            padding-right: 32px;
+            padding-left: 32px;
+        }
         .box {
             box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
             border-radius: 2px;
