@@ -1,6 +1,8 @@
+@import "node_modules/bulma/sass/utilities/mixins";
 html,
 body {
     background-color: #F5F8FA;
+    //waktu open navbar mobile html body overflow hidden
 }
 
 .app-navbar-dashboard {
@@ -16,6 +18,14 @@ body {
                 img {
                     max-height: 2.25rem;
                 }
+            }
+        }
+        @include mobile {
+            .navbar-menu {
+                -webkit-overflow-scrolling: touch;
+                max-height: calc(100vh - 3.25rem);
+                overflow: auto;
+                z-index: 1;
             }
         }
         .navbar-item {
@@ -36,14 +46,14 @@ body {
                 &:hover {
                     color: #65cb67;
                 }
-                &:hover:after {
-                    border: 1px solid #65cb67;
+                &:after {
+                    border: 1px solid #4a4a4a;
                     border-top-width: 1px;
                     border-right-width: 1px;
                     border-top-style: solid;
                     border-right-style: solid;
-                    border-top-color: rgb(101, 203, 103);
-                    border-right-color: rgb(101, 203, 103);
+                    border-top-color: rgb(74, 74, 74);
+                    border-right-color: rgb(74, 74, 74);
                     border-right: 0;
                     border-top: 0;
                     content: " ";
@@ -58,14 +68,14 @@ body {
                     right: 1.125em;
                     top: 50%;
                 }
-                &:after {
-                    border: 1px solid #4a4a4a;
+                &:hover:after {
+                    border: 1px solid #65cb67;
                     border-top-width: 1px;
                     border-right-width: 1px;
                     border-top-style: solid;
                     border-right-style: solid;
-                    border-top-color: rgb(74, 74, 74);
-                    border-right-color: rgb(74, 74, 74);
+                    border-top-color: rgb(101, 203, 103);
+                    border-right-color: rgb(101, 203, 103);
                     border-right: 0;
                     border-top: 0;
                     content: " ";
@@ -93,21 +103,23 @@ body {
 }
 
 .app-main-dashboard {
+    overflow: hidden;
     .column {
         .menu {
-            padding-top: 88px;
+            padding-top: 80px;
             background-color: #fff;
             box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
-            margin-top: 12px;
+            position: absolute;
+            left: 0;
             .menu-list {
                 li {
                     a {
-                        padding-left: 7px;
-                        border-left: 18px solid #fff;
+                        padding-left: 10px;
+                        border-left: 6px solid #fff;
                         padding-top: 12px;
                         padding-bottom: 12px;
                         &.is-active {
-                            border-left: 17px solid #65cb67;
+                            border-left: 6px solid #65cb67;
                             color: #65cb67;
                         }
                         &:hover {
@@ -134,17 +146,13 @@ body {
                 width: 16.66667%;
             }
         }
-    }
-    .main {
-        background-color: #F5F8FA;
-        padding-top: 100px;
-        @include desktop {
-            padding-right: 32px;
-            padding-left: 32px;
-        }
-        .box {
-            box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
-            border-radius: 2px;
+        .main {
+            padding-top: 28px;
+            background-color: #F5F8FA;
+            .box {
+                box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
+                border-radius: 2px;
+            }
         }
     }
 }

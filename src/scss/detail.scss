@@ -23,12 +23,13 @@
                         width: 100px;
                         border-radius: 100%;
                         background-color: white;
-                        margin-top: -80px;
+                        margin-top: -70px;
                         position: relative;
                         box-shadow: 0 5px 5px 0 rgba(219, 219, 219, 0.25);
+                        border: 1px solid rgba(219, 219, 219, 0.25);
                         img {
-                            width: 80px;
-                            height: 80px;
+                            width: 100px;
+                            height: 100px;
                             margin: 0 auto;
                         }
                     }
