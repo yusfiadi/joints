@@ -8234,6 +8234,9 @@ label.panel-block {
   background-position: bottom; }
   .app-content-kategori section.is-intro img {
     width: 15%; }
+    @media screen and (max-width: 768px) {
+      .app-content-kategori section.is-intro img {
+        width: 30%; } }
 
 .app-content-kategori section.is-hadiah {
   background-color: #fafafa; }

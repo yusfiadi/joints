@@ -9,6 +9,9 @@
             background-position: bottom;
             img {
                 width: 15%;
+                @include mobile {
+                    width: 30%;
+                }
             }
         }
         &.is-hadiah {
